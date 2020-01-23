@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <style>
+      .attribution {
+        padding: 15px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="left">
+        <div class="container">
+          <img class="logo" src="images/logo.svg" alt="logo" />
+          <h1 class="heading">
+            <span class="heading__first-line">We're</span>
+            <span class="heading__second-line">coming</span>
+            <span class="heading__third-line">soon</span>
+          </h1>
+          <p class="left__description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="" class="form">
+            <div class="input-container">
+              <input
+                class="input-container__input-email"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <img
+                class="input-container__error-img"
+                src="images/icon-error.svg"
+                alt="error"
+              />
+              <label class="input-container__label" for="email">Email:</label>
+              <button
+                class="input-container__submit-btn"
+                formnovalidate
+                type="submit"
+              >
+                <img src="images/icon-arrow.svg" alt="" srcset="" />
+              </button>
+              <small class="input-container__error-msg"
+                >Please provide a valid email</small
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="right"></div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://jarekterejkodev.netlify.com/" target="_blank"
+          >Jarosław Terejko</a
+        >
+      </p>
+    </footer>
+    <script src="validation.js"></script>
+  </body>
+</html>

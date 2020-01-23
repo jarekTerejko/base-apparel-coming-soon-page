@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 58% 42%;
+      grid-template-columns: 58% 42%;
+  min-height: 100vh;
+}
+
+.hero .left {
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.hero .left__description {
+  color: #ce9797;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.hero .left .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 480px;
+  padding: 0 15px;
+}
+
+.hero .logo {
+  margin-top: 50px;
+}
+
+.hero .right {
+  background: url(images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.heading {
+  margin-top: 100px;
+  font-size: 60px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  color: #413a3a;
+  line-height: 1.1;
+}
+
+.heading__first-line {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.heading__second-line, .heading__third-line {
+  font-weight: 600;
+  display: block;
+}
+
+.heading__third-line {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container.error .input-container__input-email {
+  border: 2px solid #f96262;
+}
+
+.input-container.error .input-container__error-img {
+  visibility: visible;
+}
+
+.input-container.error .input-container__error-msg {
+  visibility: visible;
+}
+
+.input-container__input-email {
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  background: transparent;
+  border: 2px solid #ce9797;
+  border-radius: 40px;
+  outline: none;
+}
+
+.input-container__input-email::-webkit-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input-container__input-email:-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input-container__input-email::-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input-container__input-email::placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input-container__label {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.input-container__error-img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 110px;
+  visibility: hidden;
+}
+
+.input-container__error-msg {
+  color: #f96262;
+  position: absolute;
+  left: 25px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.input-container__submit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: inline-block;
+  width: 90px;
+  border: none;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  background-size: 100% auto;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 1px 7px #ee8c8c;
+          box-shadow: 0px 1px 7px #ee8c8c;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  outline: none;
+}
+
+.input-container__submit-btn:hover {
+  background-size: 300% auto;
+}
+
+@media (max-width: 1000px) {
+  .hero .left .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .hero .left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-bottom: 70px;
+  }
+  .hero .left .logo {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 170px;
+  }
+  .hero .left .container {
+    padding: 50px;
+    text-align: center;
+  }
+  .hero .right {
+    min-height: 50vh;
+    background-position: top left;
+    overflow: hidden;
+    margin-top: 130px;
+  }
+  .heading {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 440px) {
+  .heading {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero .left .container {
+    padding: 0 15px;
+    text-align: center;
+  }
+  .heading {
+    font-size: 32px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
